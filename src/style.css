@@ -1,0 +1,9 @@
+.portfolio {
+    height: 100vh;
+}
+
+.project {
+    height: 70%;
+    width: 90%;
+    background-color: #002346;
+}
