@@ -9,7 +9,7 @@ const Reviews = () => {
             img: "",
             name: "Vionah A",
             title: "Student",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque nemo id repudiandae, facere dolorem dignissimos. Nemo in saepe odit, commodi cum atque accusamus quam molestiae accusantium nisi, ut ea.",
+            text: "Your work is impressive and demonstrates your proficiency in various in various programming languages and technologies.It is evident that you have experience in developing a range of applications, and have worked on projects of varying complexity.",
         },
         {
             id: 2,
@@ -31,7 +31,7 @@ const Reviews = () => {
             img: "",
             name: "Humphrey Nyamwalo",
             title: "Electric Enginneer",
-            text: "Beautiful minimalist designer and great and fast response with support. Highly recommend. Thanks Makechi.",
+            text: "Beautiful minimalist designer and great and fast response with support. Highly recommend. I Would recommend him to others looking for a skilled and experienced developer. Thanks Makechi",
         },
         {
             id: 5,
@@ -98,13 +98,13 @@ const ReviewBox = ({ review }) => {
 const Buttons = () => {
     return (
         <div className="buttons">
-            <div className="left flex rev-prev">
+            <button className="left flex rev-prev">
                 <FaChevronLeft />
-            </div>
+            </button>
             <div className="line"></div>
-            <div className="right flex rev-next">
+            <button className="right flex rev-next">
                 <FaChevronRight />
-            </div>
+            </button>
             <div className="line"></div>
         </div>
     );
@@ -114,13 +114,13 @@ const MobileButtons = () => {
     return (
         <div className="mobile-buttons buttons">
             <div className="line"></div>
-            <div className="left flex rev-prev">
+            <button className="left flex rev-prev">
                 <FaChevronLeft />
-            </div>
+            </button>
             <div className="line"></div>
-            <div className="right flex rev-next">
+            <button className="right flex rev-next">
                 <FaChevronRight />
-            </div>
+            </button>
             <div className="line"></div>
         </div>
     );

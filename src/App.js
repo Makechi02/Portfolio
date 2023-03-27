@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import About from "./components/About";
+import BottomBar from "./components/BottomBar";
 import Contact from "./components/Contact";
 import CustomCursor from "./components/CustomCursor";
 import Header from "./components/Header";
@@ -43,6 +44,7 @@ function App() {
 							<Reviews />
 							<Portfolio />
 							<Contact />
+							<BottomBar />
 						</div>
 					</div>
 
