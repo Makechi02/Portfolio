@@ -33,7 +33,7 @@ const Servives = () => {
 
 const WebDevelopmentService = () => {
     return (
-        <div className="service flex">
+        <div className="service flex-center">
             <div className="icon">
                 <svg
                     version="1.1"
@@ -75,7 +75,7 @@ const WebDevelopmentService = () => {
 
 const WebDesignService = () => {
     return (
-        <div className="service flex">
+        <div className="service flex-center">
             <div className="icon">
                 <svg
                     version="1.1"
@@ -105,7 +105,7 @@ const WebDesignService = () => {
 
 const TroubleShootingService = () => {
     return (
-        <div className="service flex">
+        <div className="service flex-center">
             <div className="icon">
                 <FaLaptopMedical />
             </div>

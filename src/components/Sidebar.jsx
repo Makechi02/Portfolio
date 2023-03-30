@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Sidebar = () => {
     return (
         <div className="sidebar flex">
-            <div className="links flex">
+            <div className="links flex-align-center">
                 <a href="https://www.facebook.com/mercus.mar.3/">
                     <FaFacebook className="link" />
                 </a>

@@ -145,7 +145,7 @@ const Home = () => {
     });
 
     return (
-        <section className="home flex content__layout" id="home">
+        <section className="home flex-center content__layout" id="home">
             <div className="content__img"></div>
             <h1 className="content__title">
                 Makechi
@@ -180,7 +180,7 @@ const Home = () => {
                 </p>
             </div>
             <a href="#contact">
-                <button className="flex">
+                <button className="flex-align-center">
                     Contact Me
                     <FaChevronRight />
                 </button>

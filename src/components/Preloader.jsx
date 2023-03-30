@@ -2,7 +2,7 @@ import HashLoader from "react-spinners/HashLoader";
 
 const Preloader = ({ loading }) => {
     return (
-        <div className="preloader flex">
+        <div className="preloader flex-center">
             <div className="text">Makechi Eric</div>
             <div className="title">Your Developer</div>
             <div className="loader">

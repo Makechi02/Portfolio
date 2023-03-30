@@ -77,7 +77,7 @@ const Reviews = () => {
 const ReviewBox = ({ review }) => {
     return (
         <div className="review-box">
-            <div className="review-header flex">
+            <div className="review-header flex-align-center">
                 <div className="review-image">
                     <img src={review.img} alt="reviewer" />
                 </div>
@@ -98,11 +98,11 @@ const ReviewBox = ({ review }) => {
 const Buttons = () => {
     return (
         <div className="buttons">
-            <button className="left flex rev-prev">
+            <button className="left flex-center rev-prev">
                 <FaChevronLeft />
             </button>
             <div className="line"></div>
-            <button className="right flex rev-next">
+            <button className="right flex-center rev-next">
                 <FaChevronRight />
             </button>
             <div className="line"></div>
@@ -114,11 +114,11 @@ const MobileButtons = () => {
     return (
         <div className="mobile-buttons buttons">
             <div className="line"></div>
-            <button className="left flex rev-prev">
+            <button className="left flex-center rev-prev">
                 <FaChevronLeft />
             </button>
             <div className="line"></div>
-            <button className="right flex rev-next">
+            <button className="right flex-center rev-next">
                 <FaChevronRight />
             </button>
             <div className="line"></div>

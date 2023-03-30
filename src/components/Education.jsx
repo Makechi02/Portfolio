@@ -77,7 +77,7 @@ const Education = () => {
 const EducationBox = ({ level }) => {
     return (
         <div className="education-box">
-            <div className="details flex">
+            <div className="details flex-align-center">
                 <p className="year">{level.year}</p>
                 <p>
                     <span className="name">{level.name}</span>
@@ -93,11 +93,11 @@ const EducationBox = ({ level }) => {
 const Buttons = () => {
     return (
         <div className="buttons">
-            <button className="left flex edu-prev">
+            <button className="left flex-center edu-prev">
                 <FaChevronLeft />
             </button>
             <div className="line"></div>
-            <button className="right flex edu-prev">
+            <button className="right flex-center edu-prev">
                 <FaChevronRight />
             </button>
             <div className="line"></div>
@@ -109,11 +109,11 @@ const MobileButtons = () => {
     return (
         <div className="mobile-buttons buttons">
             <div className="line"></div>
-            <button className="left flex edu-prev">
+            <button className="left flex-center edu-prev">
                 <FaChevronLeft />
             </button>
             <div className="line"></div>
-            <button className="right flex edu-next">
+            <button className="right flex-center edu-next">
                 <FaChevronRight />
             </button>
             <div className="line"></div>

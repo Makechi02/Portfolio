@@ -50,6 +50,17 @@ body {
     display: flex;
 }
 
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .preloader {
     width: 100%;
     height: 100vh;
@@ -57,8 +68,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     gap: 10px;
 }
@@ -131,8 +140,6 @@ section > .sub-title,
     width: 100%;
     border: 1px solid #fff;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
     font-size: 1.3rem;
     cursor: pointer;
     background: transparent;
@@ -158,13 +165,11 @@ header {
     background-color: #444;
     border-radius: 100vmax;
     padding: 0 0.5rem;
-    align-items: center;
     z-index: 1;
 }
 
 .logo {
     margin-right: auto;
-    align-items: center;
     gap: 10px;
 }
 
@@ -173,8 +178,6 @@ header {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
     color: #000;
     font-size: 1.3rem;
     font-family: "The Bomb Font";
@@ -184,9 +187,12 @@ header {
     display: none;
 }
 
+.mobile-navigation {
+    display: none;
+}
+
 ul {
     list-style: none;
-    align-items: center;
 }
 
 nav ul li a {
@@ -212,7 +218,6 @@ nav ul li button {
     height: 40px;
     padding: 10px 20px;
     font-size: 1rem;
-    align-items: center;
     gap: 5px;
     cursor: pointer;
     margin-left: 1rem;
@@ -243,7 +248,6 @@ nav ul li button {
 .sidebar .links,
 .bottom-bar .links {
     flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
     font-size: 1.5rem;
 }
@@ -257,8 +261,6 @@ nav ul li button {
     display: none;
     height: 50px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 .bottom-bar .links {
@@ -268,8 +270,6 @@ nav ul li button {
 .home {
     height: 100vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -309,7 +309,6 @@ nav ul li button {
     text-transform: uppercase;
     cursor: pointer;
     gap: 5px;
-    align-items: center;
     transition: gap 0.5s;
 }
 
@@ -349,11 +348,8 @@ nav ul li button {
 
 .service {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     text-align: center;
-    /* border: 1px solid #bbb; */
     width: 240px;
     height: 300px;
 }
@@ -373,7 +369,6 @@ nav ul li button {
 }
 
 .education .details {
-    align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -408,9 +403,6 @@ nav ul li button {
     width: 200px;
     height: 200px;
     /* background-color: #2a2a2a; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .percent {
@@ -431,7 +423,6 @@ nav ul li button {
     width: 100%;
     height: 100%;
     fill: transparent;
-    /* stroke: #191919; */
     stroke: #707070;
     stroke-width: 2;
     transform: translate(5px, 5px);
@@ -466,16 +457,10 @@ nav ul li button {
 .number {
     position: absolute;
     inset: 0;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .number h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 700;
     font-size: 2.5em;
 }
@@ -494,7 +479,6 @@ nav ul li button {
 
 .review-header {
     gap: 1rem;
-    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -534,8 +518,6 @@ nav ul li button {
 
 .content {
     height: 100%;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -576,8 +558,6 @@ nav ul li button {
 .contact form input[type="submit"] {
     width: 50%;
     text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
 }
 
 .contact form .tst {
@@ -630,11 +610,15 @@ nav ul li button {
         background-color: #222;
         border-radius: unset;
         padding: 1rem;
-        align-items: center;
         z-index: 100;
     }
 
     .primary-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: flex;
         position: fixed;
         gap: 2em;
         inset: 0 0 0 20%;
@@ -646,20 +630,18 @@ nav ul li button {
     }
 
     @supports (backdrop-filter: blur(1rem)) {
-        .primary-navigation {
+        .mobile-navigation {
             background: hsl(0 0% 100% / 0.1);
             backdrop-filter: blur(1rem);
         }
     }
 
-    .primary-navigation .nav-link {
+    .mobile-navigation .nav-link {
         opacity: 0;
     }
 
     .mobile-nav-toggle {
         display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 1.1rem;
         width: 40px;
         aspect-ratio: 1;

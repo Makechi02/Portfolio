@@ -41,7 +41,7 @@ const Contact = () => {
                     <input
                         type="submit"
                         value="send message"
-                        className="flex"
+                        className="flex-center"
                     />
                 </form>
 

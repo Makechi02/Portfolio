@@ -2,8 +2,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const BottomBar = () => {
     return (
-        <div className="bottom-bar flex">
-            <div className="links flex">
+        <div className="bottom-bar flex-center">
+            <div className="links flex-align-center">
                 <a href="https://www.facebook.com/mercus.mar.3/">
                     <FaFacebook className="link" />
                 </a>

@@ -47,15 +47,15 @@ const CodingSkills = () => {
 
 const Card = ({ skill }) => {
     return (
-        <div className="card">
+        <div className="card flex-center">
             <div className="percent" style={{ "--num": skill.value }}>
                 <div className="dot"></div>
                 <svg>
                     <circle r={70} cx={70} cy={70}></circle>
                     <circle r={70} cx={70} cy={70}></circle>
                 </svg>
-                <div className="number">
-                    <h2>
+                <div className="number flex-center">
+                    <h2 className="flex-center">
                         {skill.value}
                         <span>%</span>
                     </h2>
