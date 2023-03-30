@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaBars, FaDownload, FaTimes } from "react-icons/fa";
+import anime from "animejs";
 
 const Header = () => {
     const [visibility, setVisible] = useState(false);
@@ -7,6 +8,40 @@ const Header = () => {
     const handleToggle = () => {
         if (visibility) setVisible(false);
         else setVisible(true);
+        toggleAnimation();
+    };
+
+    useEffect(() => {
+        anime({
+            targets: ".primary-navigation",
+            translateX: "100%",
+        });
+    }, []);
+
+    const toggleAnimation = () => {
+        if (visibility) {
+            anime({
+                targets: ".primary-navigation",
+                translateX: "100%",
+            });
+
+            anime({
+                targets: ".primary-navigation .nav-link",
+                opacity: 0,
+                delay: anime.stagger(100, { easing: "easeOutQuad" }),
+            });
+        } else {
+            anime({
+                targets: ".primary-navigation",
+                translateX: 0,
+            });
+
+            anime({
+                targets: ".primary-navigation .nav-link",
+                opacity: 1,
+                delay: anime.stagger(100, { easing: "easeOutQuad" }),
+            });
+        }
     };
 
     return (
@@ -21,7 +56,7 @@ const Header = () => {
                 {/* <span className="sr-only">Menu</span> */}
                 {!visibility ? <FaBars /> : <FaTimes />}
             </button>
-            <Navbar visibility={visibility} handleToggle={handleToggle} />
+            <Navbar handleToggle={handleToggle} anime={anime} />
         </header>
     );
 };
@@ -34,7 +69,7 @@ const Logo = () => {
     );
 };
 
-const Navbar = ({ visibility, handleToggle }) => {
+const Navbar = ({ handleToggle }) => {
     const changeActive = (index) => {
         const links = document.querySelectorAll(".nav-link");
         for (let i = 0; i < links.length; i++) {
@@ -47,9 +82,7 @@ const Navbar = ({ visibility, handleToggle }) => {
     return (
         <nav>
             <ul
-                className={`primary-navigation flex ${
-                    visibility ? "visible" : ""
-                }`}
+                className={`primary-navigation flex`}
                 id="primary-navigation"
                 data-visible="true"
             >
@@ -113,7 +146,7 @@ const Navbar = ({ visibility, handleToggle }) => {
                         Contact
                     </a>
                 </li>
-                <li>
+                <li className="nav-link">
                     <button className="flex">
                         <span>Download CV</span>
                         <FaDownload />

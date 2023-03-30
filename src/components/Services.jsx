@@ -38,8 +38,8 @@ const WebDevelopmentService = () => {
                 <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="70"
-                    height="70"
+                    width="80"
+                    height="80"
                     viewBox="0 0 40 32"
                     className="iconTest"
                 >
@@ -48,19 +48,19 @@ const WebDevelopmentService = () => {
                         d="M26 23l3 3 10-10-10-10-3 3 7 7z"
                         stroke="#ffffff"
                         strokeWidth="1"
-                        fill="#ffffff00"
+                        fill="none"
                     ></path>
                     <path
                         d="M14 9l-3-3-10 10 10 10 3-3-7-7z"
                         stroke="#ffffff"
                         strokeWidth="1"
-                        fill="#ffffff00"
+                        fill="none"
                     ></path>
                     <path
                         d="M21.916 4.704l2.171 0.592-6 22.001-2.171-0.592 6-22.001z"
                         stroke="#ffffff"
                         strokeWidth="1"
-                        fill="#ffffff00"
+                        fill="none"
                     ></path>
                 </svg>
             </div>
@@ -89,7 +89,7 @@ const WebDesignService = () => {
                     <path
                         stroke="#ffffff"
                         strokeWidth="1"
-                        fill="#ffffff00"
+                        fill="none"
                         d="M6.5 20c-1.375 0-2.5-1.125-2.5-2.5v-11c0-1.375 1.125-2.5 2.5-2.5h17c1.375 0 2.5 1.125 2.5 2.5v11c0 1.375-1.125 2.5-2.5 2.5h-17zM6 6.5v11c0 0.266 0.234 0.5 0.5 0.5h17c0.266 0 0.5-0.234 0.5-0.5v-11c0-0.266-0.234-0.5-0.5-0.5h-17c-0.266 0-0.5 0.234-0.5 0.5zM27.5 21h2.5v1.5c0 0.828-1.125 1.5-2.5 1.5h-25c-1.375 0-2.5-0.672-2.5-1.5v-1.5h27.5zM16.25 22.5c0.141 0 0.25-0.109 0.25-0.25s-0.109-0.25-0.25-0.25h-2.5c-0.141 0-0.25 0.109-0.25 0.25s0.109 0.25 0.25 0.25h2.5z"
                     ></path>
                 </svg>

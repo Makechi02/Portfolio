@@ -43,6 +43,7 @@ const Home = () => {
             this.DOM.title = this.el.querySelector(".content__title");
             this._initEvents();
         }
+
         _initEvents() {
             this.mouseenterFn = (ev) => {
                 anime.remove(this.DOM.img);
@@ -70,6 +71,7 @@ const Home = () => {
             this.el.addEventListener("mouseleave", this.mouseleaveFn);
             this.el.addEventListener("mouseenter", this.mouseenterFn);
         }
+
         _layout(ev) {
             const mousepos = getMousePos(ev);
             const docScrolls = {

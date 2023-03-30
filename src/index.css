@@ -641,10 +641,8 @@ nav ul li button {
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
         background: hsl(0 0% 0% / 0.75);
-        transform: translateX(100%);
         align-items: flex-end;
         z-index: 1000;
-        transition: transform 0.8s;
     }
 
     @supports (backdrop-filter: blur(1rem)) {
@@ -654,8 +652,8 @@ nav ul li button {
         }
     }
 
-    .primary-navigation.visible {
-        transform: translateX(0);
+    .primary-navigation .nav-link {
+        opacity: 0;
     }
 
     .mobile-nav-toggle {
